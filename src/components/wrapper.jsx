@@ -1,14 +1,23 @@
 import React from 'react'
-import {ListGroup} from 'react-bootstrap'
+import TodoList from './todoL-lst'
+import InputForm from './form'
+import { Container, Row, Col } from 'react-bootstrap'
+const Wrapper = () => {
+    return (
+        <Container>
+            <Row style={{ margin: '50px' }}>
+                <Col>
+                    <InputForm />
+                </Col>
+            </Row>
+            <Row>
 
-const Wrapper = ()=>{
-return (
-<ListGroup>
-    <ListGroup.Item>exemple </ListGroup.Item>
-</ListGroup>
-
-
-)
+                <Col>
+                    <TodoList />
+                </Col>
+            </Row>
+        </Container>
+    )
 
 
 }
